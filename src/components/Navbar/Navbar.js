@@ -9,6 +9,7 @@ const Navbar = () => {
       <div className={classes.center}>
         <ul className={classes.ul}>
             <li>Home</li>
+            <li>About</li>
             <li>Blog</li>
             <li>Create</li>
         </ul>
