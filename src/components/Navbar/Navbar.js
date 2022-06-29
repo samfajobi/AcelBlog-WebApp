@@ -16,7 +16,7 @@ const Navbar = () => {
         </ul>
       </div>
       <div className={classes.right}>
-        <img className={classes.image} src="./MyImage2.png"/>
+        <img className={classes.image} src="./MyImage2.png" alt=""/>
         <div className={classes.search} >
       </div>
       </div>
