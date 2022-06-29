@@ -1,12 +1,11 @@
-import Navbar from "./components/Navbar/Navbar";
-import LogoNav from "./components/LogoNav/LogoNav";
+import HomePage from "./components/HomePage/HomePage";
+
 
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <LogoNav />
+      <HomePage />
     </div>
   );
 }
