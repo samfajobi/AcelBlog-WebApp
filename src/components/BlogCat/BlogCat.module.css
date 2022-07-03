@@ -4,4 +4,15 @@
     background-color: rgb(45, 238, 238);
     flex: 6;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+ul {
+
+}
+
+li {
+    padding-left: 40px;
+}
+

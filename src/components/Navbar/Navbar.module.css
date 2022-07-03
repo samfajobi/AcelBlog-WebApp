@@ -27,6 +27,7 @@
 
 .center {
     flex: 6;
+    margin-left: 40px;
 }
 
 ul {
