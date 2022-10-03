@@ -16,15 +16,19 @@ const UserSchema = new mongoose.Schema(
         password: {
             type: String,
             required: [true, "Please provide a password"],
+            minlength: 6,
+           
         },
         profilePic: {
             type: String,
-            default: ""
-        },
+            default: ""  
+        }, 
         isAdmin: {
             type: Boolean,
             default: false
-        }
+        },
+        resetPasswordToken: String,
+        resetPasswordExpire: Date
 
     },
     { timestamps: true }
@@ -36,3 +40,4 @@ const UserSchema = new mongoose.Schema(
 const UserModel = mongoose.model('UserModel', UserSchema);
 
 module.exports = UserModel;
+  
