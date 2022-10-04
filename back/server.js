@@ -3,6 +3,9 @@ const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 const authRoute = require("./routes/auth");
 const userRoute = require("./routes/user");
+const postRoute = require("./routes/post")
+
+
 
 
 
@@ -16,10 +19,13 @@ mongoose.connect(process.env.DATABASE_URL)
 .then( () => console.log('DataBase Connection Successful'))
 .catch( err => console.log(err))
 
-app.use('/api/auth',  authRoute)
-app.use('/api/user',  userRoute)
+app.use('/api/auth',  authRoute);
+app.use('/api/user',  userRoute);
+app.use('/api/post', postRoute);
 
-const PORT = 5000; 
+
+
+const PORT = 5000;   
 
 app.listen(PORT, () => {
     console.log(`App is running on PORT ${PORT}`)

@@ -15,7 +15,7 @@ const postsSchema = new mongoose.Schema({
     },  
     photo: {
         type: String,
-        required: [ true, "please provide a profile picture"]
+        required: [ false, "please provide a profile picture"]
     },
     categories: {
         type: Array,
