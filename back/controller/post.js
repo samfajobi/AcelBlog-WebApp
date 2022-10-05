@@ -1,8 +1,9 @@
 const postModel = require("../models/posts");
 const UserModel = require("../models/User");
-const { post } = require("../routes/auth");
 
 
+
+// Create Post
 exports.createPost = async (req, res, next) => {
     const newPost = new postModel(req.body)
     try{
@@ -15,7 +16,7 @@ exports.createPost = async (req, res, next) => {
 }
 
 
-
+// Update Post
 exports.updatePost = async (req, res, next) => {
     try{
         const post = await postModel.findById(req.params.id)
@@ -65,7 +66,7 @@ exports.deletePost = async (req, res, next) => {
 }
 
 
-
+// Get A Post
 exports.getPost = async (req, res, next) => {
     try{
         const post = await UserModel.findById(req.params.id)
